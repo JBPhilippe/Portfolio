@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from 'react-scroll'
 import './home.css'
-import avatar from '../../assets/Avatar2.png'
-import { FaBriefcase } from "react-icons/fa6";
+import avatar from '../../assets/Avatar.png'
 
 const Home = () => {
   return (
@@ -10,10 +8,10 @@ const Home = () => {
         <div className="homeContent">
             <span className="introHello">Hello,</span>
             <span className="introText">I'm <span className="introName">Jean-Baptiste PHILIPPE </span> <br /> Web developper</span>
-            <p className="introPara"> I'm a backend web developper </p>
-            <Link> <button className="btnHire"> <FaBriefcase /> Hire me </button></Link>
         </div>
-        <img src={avatar} alt="Portrait" className='avatar'/>
+        <div className="avatar">
+        <img src={avatar} alt="Portrait" className="portrait" />
+        </div>
     </section>
   )
 }

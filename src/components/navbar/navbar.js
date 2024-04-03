@@ -9,13 +9,13 @@ import { FaRegMessage } from "react-icons/fa6";
 const Navbar = () => {
   return (
 
-    <nav className="navbar">
-      <img src={logo} alt="Logo" className="logo" />
+    <nav id="navbar">
+      <a href="#home"><img src={logo} alt="Logo" className="logo" /></a>
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem">Home</Link>
-        <Link className="desktopMenuListItem">Clients</Link>
-        <Link className="desktopMenuListItem">About</Link>
-        <Link className="desktopMenuListItem">Portfolio</Link>
+        <Link activeClass='active' to="home" spy={true} smooth={true} offset={-100} className="desktopMenuListItem">Home</Link>
+        <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-100} className="desktopMenuListItem" >Projects</Link>
+        <Link activeClass='active' to="#" className="desktopMenuListItem">Skills</Link>
+        <Link activeClass='active' to="#" className="desktopMenuListItem">Resume</Link>
       </div>
       <button className="desktopMenuButton">
        <FaRegMessage />Contact Me

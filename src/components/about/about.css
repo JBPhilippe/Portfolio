@@ -1,0 +1,22 @@
+#about {
+    overflow: hidden;
+}
+
+.aboutContent {
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+   
+}
+
+.aboutTitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.aboutPara {
+    font-size: large;
+}
+

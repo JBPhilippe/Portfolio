@@ -1,68 +1,48 @@
 #home {
-    height: calc(100vh - 5rem);
-    width: 100vw;
-    max-width: 100rem;
-    margin: 1rem auto;
     overflow: hidden;
-    position: relative;
-}
-
-.avatar {
-    position: absolute;
-    top: -1.5em;
-    right: 10rem;
-    z-index: -1;
-    object-fit: cover;
 }
 
 .homeContent {
-    height: 70vh;
-    width: 100vw;
-    padding: 2rem;
+    height: 30vh;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    text-align: center; 
+    /* Si je veux mettre une image a droite on supprime le text align */
 }
 
 .introHello {
     font-size: 1.75rem;
     font-weight: 100;
+
 }
 
 .introName {
     color: yellow;
 }
 
-.introPara {
-    font-size:large;
-    font-weight: 100;
+.avatar {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
 }
 
-.btnHire {
+.portrait {
+    border-radius: 5rem;
+}
+
+/* .btnHire {
     background-color: white;
     border: none;
     border-radius: 2rem;
     margin: 1rem 0;
     padding: 0.75rem 2rem;
     cursor: pointer;
-}
+} */
 
-.btnHire svg {
+/* .btnHire svg {
     scale: 150%;
     margin-right: 0.5rem;
-}
-
-@media screen and (max-width:950px) {
-    .avatar {
-        right:10vw;
-    }
-
-    .introHello {
-        margin-top: 10rem;
-    }
-    
-}
-
+} */

@@ -6,6 +6,11 @@
     background: transparent;
 }
 
+html {
+    width: 100vw;
+    padding: 0 5rem;
+}
+
 body {
     background: rgb(30, 30, 30);
     color: white;

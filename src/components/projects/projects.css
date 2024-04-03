@@ -1,0 +1,25 @@
+.projectsHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsTitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projectsContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+
+.projectsName {
+    text-align: center;
+}
+

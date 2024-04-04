@@ -1,7 +1,8 @@
 import React from 'react'
 import './projects.css'
-import Datas from '../../datas/projectDatas'
-import ProjectThumb from '../projectsThumb/projectThumbs'
+import ProjectDisplay from '../projectsDisplay/projectDisplay'
+
+
 
 const Projects = () => {
     return (
@@ -14,21 +15,8 @@ const Projects = () => {
 
             </div>
 
-            <div className="projectsContainer">
-
-                {Datas.map((data) => {
-                    return (
-                        <article className="thumb" key={data.id}>
-
-                            <ProjectThumb title={data.title} cover={data.cover} description={data.description} tags={data.tags} />
-
-                        </article>
-                    );
-                })}
-
-            </div>
-
-
+            <ProjectDisplay />
+            
         </section>
     )
 }

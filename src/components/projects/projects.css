@@ -1,25 +1,66 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .projectsHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
+    font-size: larger;
+    width: 70vw;
 }
 
 .projectsTitle {
     font-size: 3rem;
-    margin-bottom: 2rem;
 }
 
 .projectsContainer {
-    margin-top: 5rem;
+   display: flex;
+   flex-direction: column;
+    margin: 5rem 0 ;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.projectGeneral {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
+}
 
+article.thumb {
+    display: flex;
+    flex-direction: row;
 }
 
 
-.projectsName {
-    text-align: center;
+
+.projectThumbTitle {
+    font-size: 1.3rem;
+    margin: 1rem 0;
 }
+
+img.projectImg {
+    width: 70vh;
+}
+
+.projectMisc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    gap: 1.5rem
+    
+}
+
+.projectLinks {
+    display: flex;
+    gap:50px;
+}
+
 

@@ -9,11 +9,10 @@
 html {
     width: 100vw;
     padding: 0 5rem;
+    overflow-x: hidden;
 }
 
 body {
     background: rgb(30, 30, 30);
     color: white;
-    overflow: hidden;
-    overflow-y: scroll;
 }

@@ -1,14 +1,13 @@
 #about {
-    overflow: hidden;
+    height: 40vh;
 }
 
 .aboutContent {
-    height: 42vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center; 
-   
+    text-align: center;
+    align-items: center;
 }
 
 .aboutTitle {
@@ -17,6 +16,8 @@
 }
 
 .aboutPara {
+    display: flex;
     font-size: large;
-}
+    width: 70vw;
 
+}

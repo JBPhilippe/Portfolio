@@ -58,9 +58,28 @@ img.projectImg {
     
 }
 
+.projectTags {
+    display: flex;
+    flex-direction: row;
+}
+  
+
+
 .projectLinks {
     display: flex;
     gap:50px;
+}
+
+.projectLinksBtn {
+    background-color: white;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+    width: 6rem;
+    max-width: 6rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 

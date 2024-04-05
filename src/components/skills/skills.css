@@ -1,0 +1,34 @@
+#skills {
+    height: 50vh;
+}
+
+
+.skillsTitle {
+    text-align: center;
+    height: 15vh;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.skillsContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.technicalStackTitle {
+    text-align: center;
+    height: 5vh;
+}
+
+.extraSkillsTitle {
+    text-align: center;
+    height: 5vh;
+}
+
+.technicalStack {
+    width: 40vw;
+}
+
+.extraSkills {
+    width: 40vw;
+}

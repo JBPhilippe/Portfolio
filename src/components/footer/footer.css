@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+}
+
+.footerLinks {
+    display: flex;
+    margin: 2rem;
+    gap: 5rem;
+    flex-direction: row;
+    list-style: none;
+}
+

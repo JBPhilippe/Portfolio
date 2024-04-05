@@ -8,12 +8,11 @@ const ProjectDisplay = () => {
 
 
             {Datas.map((data) => {
-                console.log(data.tags)
 
                 return (
-                    <article className="thumb" key={data.id}>
+                    <article className="thumb" key={data.id} >
 
-                        <div className="projectGeneral">
+                        <div className="projectGeneral"  >
 
                             <div className="projectThumb" >
 
@@ -23,18 +22,23 @@ const ProjectDisplay = () => {
                             </div>
 
 
-                            <div className="projectMisc">
+                            <div className="projectMisc" >
                                 <p className="projectDescription" >
                                     {data.description}
                                 </p>
 
-                                <div className="projectsTags">
-                                    {data.tags}
+                                <div className="projectTags">
+                                    {data.tags.map((tag, i) =>
+                                        <div className="tags" key={i} >
+                                            {tag}
+                                        </div>
+                                    )}
                                 </div>
 
+
                                 <div className="projectLinks">
-                                    <a href="#home"> Demo </a>
-                                    <a href="#home"> Lien Repo</a>
+                                    <a href="#home"> <button className='projectLinksBtn'>Demo</button>  </a>
+                                    <a href="#home"> <button className='projectLinksBtn'>Github</button></a>
                                 </div>
                             </div>
 
@@ -49,3 +53,5 @@ const ProjectDisplay = () => {
 }
 
 export default ProjectDisplay
+
+

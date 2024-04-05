@@ -15,4 +15,8 @@ html {
 body {
     background: rgb(30, 30, 30);
     color: white;
+    a {
+        color: white;
+        cursor: pointer;
+    }
 }

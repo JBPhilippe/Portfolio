@@ -1,13 +1,38 @@
 import React from 'react'
+import './skills.css'
+import css from '../../assets/skills/CSSLogo.webp'
+import html from '../../assets/skills/HTMLLogo.webp'
+import java from '../../assets/skills/JSLogo.webp'
+import react from '../../assets/skills/REACTLogo.webp'
+import mongo from '../../assets/skills/MongoDB.webp'
+import node from '../../assets/skills/NodeJs.webp'
+
 
 const Skills = () => {
     return (
         <section id="skills">
 
-            <div className="skillsHeader">
 
-                <div className="skillsTitle"> My Skills </div>
-                <p className="skillsPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, dignissimos? Ipsum quisquam, recusandae natus ab repellat sapiente ea nemo voluptates officiis numquam, incidunt, sequi tempore beatae atque consequatur labore tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo suscipit nam quisquam iste, aut quod perspiciatis maxime consequuntur corporis. In nam, quis iste adipisci consectetur quibusdam sequi placeat. Dolore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero vitae ex dolor recusandae, sit earum quod quidem placeat rerum reiciendis maxime accusamus, adipisci repellat, cupiditate praesentium non quae quibusdam quia?</p>
+            <h3 className="skillsTitle"> Skills </h3>
+
+
+            <div className="skillsContainer">
+
+
+                <div className="technicalStack">
+                    <h4 className="technicalStackTitle">Technical Stack</h4>
+                    <img src={css} alt="logoCss" />
+                    <img src={html} alt="logoHtml" />
+                    <img src={java} alt="logoJS" />
+                    <img src={react} alt="logoReact" />
+                    <img src={mongo} alt="logoReact" />
+                    <img src={node} alt="logoReact" />
+
+                </div>
+                <div className="extraSkills">
+                    <h4 className="extraSkillsTitle"> Extra Skills</h4>
+                    <p className="extraSkillsPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fuga voluptate cum distinctio? Praesentium, tempora odio, minus voluptatum dolorum adipisci necessitatibus officia placeat veniam sequi est accusantium ducimus eligendi omnis?</p>
+                </div>
 
             </div>
 

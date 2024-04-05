@@ -4,7 +4,7 @@ import avatar from '../../assets/Avatar.png'
 
 const Home = () => {
   return (
-    <section id="home">
+    <header id="home">
 
         <div className="homeContent">
           <span className="introHello">Hello,</span>
@@ -15,7 +15,7 @@ const Home = () => {
           <img src={avatar} alt="Portrait" className="portrait" />
         </div>
 
-    </section>
+    </header>
   )
 }
 

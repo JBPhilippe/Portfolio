@@ -1,16 +1,46 @@
 footer {
     display: flex;
-    height: 20vh;
+    flex-wrap: wrap;
+    margin-top: 5rem;
     flex-direction: column;
     justify-content:end;
     align-items: center;
 }
 
-.footerLinks {
+.legalMentionLink {
     display: flex;
     margin: 2rem;
     gap: 5rem;
     flex-direction: row;
     list-style: none;
+}
+
+@media screen and (max-width:550px) {
+
+
+    footer {
+        font-size:smaller;
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+
+
+    footer {
+        
+        
+       max-width: 25rem;
+    }
+
+    p#copyrights {
+        display: flex;
+        font-size: smaller;
+        text-align: center;
+        
+    }
+
+
 }
 

@@ -13,12 +13,14 @@
 .contactTitle {
 
     text-align: center;
+    font-family: "Permanent Marker";
     font-size: 3rem;
     font-weight: bold;
 
 }
 
 .contactPara {
+    font-family: "Permanent Marker";
     padding: 1rem;
     font-size: medium;
     font-weight: 300;
@@ -92,7 +94,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     font-size: medium;
     width: 100%;
     max-width: 30rem;
@@ -105,7 +107,7 @@
 }
 
 .icon {
-    scale:250%
+    scale: 250%
 }
 
 .links {
@@ -116,4 +118,49 @@
 }
 
 
+@media screen and (max-width:800px) {
 
+    .contactContainer {
+        flex-direction: column-reverse;
+    }
+
+    .links {
+        gap: 3rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .informations {
+
+        gap: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:530px) {
+
+    .emailPro,
+    .phoneNumber,
+    .localisation {
+        max-width: 15rem;
+    }
+
+    .informations {
+        align-items: center;
+    }
+
+    .name,
+    .email,
+    .messageArea {
+        
+        max-width: 15rem;
+        
+    }
+
+
+
+}

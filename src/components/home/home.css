@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
+    width: 100%;
     justify-content: space-around;
+    background: rgba(30, 30, 30, .8) url(../../assets/bg-img.png);
+    background-blend-mode: darken;
 }
 
 .homeContainer {
@@ -18,13 +21,14 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-family: "Permanent Marker";
     /* Si je veux mettre une image a droite on supprime le text align */
 }
 
 .introHello {
     font-size: 1.75rem;
     font-weight: 100;
-
+    
 }
 
 .introName {
@@ -41,16 +45,10 @@
     border-radius: 5rem;
 }
 
-/* .btnHire {
-    background-color: white;
-    border: none;
-    border-radius: 2rem;
-    margin: 1rem 0;
-    padding: 0.75rem 2rem;
-    cursor: pointer;
-} */
+@media screen and (max-width:430px) {
 
-/* .btnHire svg {
-    scale: 150%;
-    margin-right: 0.5rem;
-} */
+    .homeContent {
+        font-size: 2rem;
+    }
+
+}

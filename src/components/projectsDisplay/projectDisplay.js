@@ -12,18 +12,18 @@ const ProjectDisplay = () => {
                 return (
                     <article className="thumb" key={data.id} >
 
+<h2 className="projectThumbTitle">{data.title}</h2>
+
                         <div className="projectGeneral"  >
 
                             <div className="projectThumb" >
-
-                                <div className="thumb-overlay"></div>
+                                
                                 <img src={data.cover} alt={data.title} className="projectImg" />
-                                <h2 className="projectThumbTitle">{data.title}</h2>
+
                             </div>
 
-
                             <div className="projectMisc" >
-                                <p className="projectDescription" >
+                                <p style={{ whiteSpace: 'pre-line' }} className="projectDescription" >
                                     {data.description}
                                 </p>
 
@@ -33,13 +33,15 @@ const ProjectDisplay = () => {
                                             {tag}
                                         </div>
                                     )}
+
+                                    <div className="projectLinks">
+                                        <a href={data.gitHubUrl} target='_blanck'> <button className='projectLinksBtn'>Github</button></a>
+                                    </div>
+
                                 </div>
 
 
-                                <div className="projectLinks">
-                                    <a href="#home"> <button className='projectLinksBtn'>Demo</button>  </a>
-                                    <a href="#home"> <button className='projectLinksBtn'>Github</button></a>
-                                </div>
+
                             </div>
 
                         </div>

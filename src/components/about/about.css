@@ -1,23 +1,48 @@
 #about {
-    height: 40vh;
+    height: 100vh;
 }
 
 .aboutContent {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    align-items: center;
+
 }
 
 .aboutTitle {
+    font-family: "Permanent Marker";
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin: 3rem 0;
 }
 
 .aboutPara {
-    display: flex;
+    padding: 0 5vw;
+    margin-top: 2rem;;
     font-size: large;
-    width: 70vw;
+    width: 60rem;
+}
+
+@media screen and (max-width:560px) {
+
+    .aboutPara {
+        font-size: small;
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+
+    #about {
+        height: 120vh;
+    }
+
+    .aboutPara {
+        font-size: smaller;
+    }
+
 
 }

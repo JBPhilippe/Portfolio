@@ -1,10 +1,11 @@
 #skills {
-    height: 50vh;
+    height: 100vh;
 }
 
 
 .skillsTitle {
     text-align: center;
+    font-family: "Permanent Marker";
     height: 15vh;
     font-size: 3rem;
     font-weight: bold;
@@ -12,23 +13,64 @@
 
 .skillsContainer {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 2rem;
 }
 
 .technicalStackTitle {
     text-align: center;
-    height: 5vh;
-}
-
-.extraSkillsTitle {
-    text-align: center;
+    font-family: "Permanent Marker";
     height: 5vh;
 }
 
 .technicalStack {
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
 
-.extraSkills {
-    width: 40vw;
+.skillSet {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50vw;
+}
+
+.CV {
+    display: flex;
+    font-family: "Permanent Marker";
+    width: 50vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cvtitle {
+    text-align: center;
+    height: 5vh;
+}
+
+
+.cvDownloadBtn {
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:1200px) {
+
+    .skillsContainer {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+
 }

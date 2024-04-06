@@ -1,14 +1,15 @@
 #navbar {
-    height: 5rem;
-    padding-top: 1rem;
+
+    background: linear-gradient(#000, 85%, rgba(110, 199, 224, .804));
+    box-shadow: 1em 1em 10em 0.1em rgba(110,199,224,.804);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    background-color: rgb(30 30 30);
-    top: 0;
-    z-index: 3;
-    overflow: hidden;
+    justify-content: center;
+    padding: 1em 2rem;
+    position: fixed;
+    width: 100vw;
+    font-family: "Permanent Marker";
+    z-index: 2;
 }
 
 .logo {
@@ -27,7 +28,7 @@
     cursor: pointer;
 }
 
-.desktopMenuListItem:hover {
+.desktopMenuListItem:hover , .listItem:hover{
     color: yellow;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid yellow;
@@ -54,6 +55,38 @@
     cursor: pointer;
 }
 
+.mobMenu {
+    scale: 150%;
+    color: yellow;
+    visibility: hidden;
+    object-fit: cover;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem;
+    position: absolute;
+    height:fit-content;
+    min-width: 15rem;
+    background: rgb(40 40 40);
+    border-radius: 1rem;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+
+}
+
+.listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30 30 30);
+}
+
 
 @media screen and (max-width:950px) {
 
@@ -65,43 +98,45 @@
 
 }
 
-@media screen and (max-width:666px) {
+@media screen and (max-width:700px) {
 
-    .desktopMenuListItem {
-        font-size: medium;
-        margin: 0.4rem;
+    #navbar {
+        padding: 1rem 5rem;
+        justify-content: space-between;
+        
     }
 
-    .desktopMenuButton svg {
-        margin-left: 0.1rem;
-        width: 0.8rem;
-        scale: 100%
-    }
+    .mobMenu {
+        visibility: visible;
 
-    .desktopMenuButton {
-        height: 2rem;
-        padding: 0 0.5rem;
-        gap: 0.5rem;
-    }
-}
-
-@media screen and (max-width:466px) {
-
-    .desktopMenuButton {
-        height: 2rem;
-        padding: 0 0.5rem;
-        gap: 0.2rem;
-      
     }
 
     .desktopMenu {
-        margin: 0 0.5rem;
-      
-    }
-
-    .desktopMenuListItem {
-        font-size: small;
-        margin: 0.2rem;
+        display: none;
     }
 
 }
+
+@media screen and (max-width:450px) {
+
+    .navMenu {
+       scale:80%
+    
+    }
+
+}
+
+@media screen and (max-width:270px) {
+
+    #navbar {
+
+        padding:1rem 1rem;
+        gap:3rem;
+        justify-content: center;
+        
+    }
+
+}
+
+
+

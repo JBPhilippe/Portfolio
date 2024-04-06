@@ -5,15 +5,18 @@ const Datas = [
     "id": 1,
     "title": "Application de location immobilière Kasa",
     "cover": require("../assets/coverKasa.webp"),
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, dignissimos? Ipsum quisquam, recusandae natus ab repellat sapiente ea nemo voluptates officiis numquam, incidunt, sequi tempore beatae atque consequatur labore tempora. ",
-    "tags" : [ 
-  
-      <img src="/skills/HTMLLogo.webp" alt="CssLogo" />,
+    "description":
+      "Ce projet a pour but le développement d'une application de location immobilière pour une agence fictive, Kasa.\n L'application est développée sous React, en multi-page, en utilisant Sass.\n\nCompétences développées:\n\n - Configuration de la navigation entre les différentes pages de l'application avec React-Router.\n - Développement des éléments de l'interface grace aux composants React.\n - Mise en oeuvre d'animation CSS (collapse etc)\n - Développement de l'interface avec Sass." ,
+    "tags": [
+
+      <img src="/skills/HTMLLogo.webp" alt="HtmlLogo" />,
       <img src="/skills/CssLogo.webp" alt="CssLogo" />,
-      <img src="/skills/JSLogo.webp" alt="CssLogo" />,
-      <img src="/skills/ReactLogo.webp" alt="CssLogo" />,
-    
-    ]
+      <img src="/skills/JSLogo.webp" alt="JSLogo" />,
+      <img src="/skills/ReactLogo.webp" alt="ReactLogo" />,
+
+    ],
+
+    "gitHubUrl": "https://github.com/JBPhilippe/kasa"
 
   },
 
@@ -21,28 +24,34 @@ const Datas = [
     "id": 2,
     "title": "Développement du Backend d'un site de notation de livre",
     "cover": require("../assets/coverMVG.webp"),
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, dignissimos? Ipsum quisquam, recusandae natus ab repellat sapiente ea nemo voluptates officiis numquam, incidunt, sequi tempore beatae atque consequatur labore tempora. ",
+    "description": "Ce projet ci concerne le développement du Backend d'un site de notation de livre.\n Les objectifs ont été la mise en place d'une API RESTful et la sécurisation des données. \n\nCompétences développées:\n\n - Configuration d'une BDD MongoDB.\n - Configuration des opérations CRUD de l'API.\n - Architecture MVC\n - Sécurisation des données (Hash, Bcrypt, Helmet etc)" ,
     "tags": [
 
-      <img src="/skills/JSLogo.webp" alt="CssLogo" />, 
-      <img src="/skills/MongoDB.webp" alt="CssLogo" />,
-      <img src="/skills/NodeJs.webp" alt="CssLogo" />,
-    
-    ]
+      <img src="/skills/JSLogo.webp" alt="JSLogo" />,
+      <img src="/skills/MongoDB.webp" alt="MongoLogo" />,
+      <img src="/skills/NodeJs.webp" alt="NodeJsLogo" />,
+
+    ],
+
+    "gitHubUrl": "https://github.com/JBPhilippe/Mon_Vieux_Grimoire"
+
   },
 
   {
     "id": 3,
     "title": "Amélioration du SEO ",
     "cover": require("../assets/coverSEO.webp"),
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, dignissimos? Ipsum quisquam, recusandae natus ab repellat sapiente ea nemo voluptates officiis numquam, incidunt, sequi tempore beatae atque consequatur labore tempora. ",
+    "description": "Pour ce projet, l'objectif principal est l'amélioration du SEO.\n L'accent a été mis sur l'utilisation des outils d'audit les plus connus tels que LightHouse et Wave mais aussi sur le débuging grâce aux ChromeDevTools.\n\nCompétences développées:\n\n - Utilisation de LightHouse pour amélioration des performances du site (SEO, temps d'affichage etc).\n - Implémentation des Meta Balises et des Rich Snippets. \n- Utilisation de Wave pour gérer les anomalies d'accessibilités ( présences des balises sémantiques, bonne cascade des balises etc).\n - Prise en mains des ChromesDevTools pour la recherche, l'identification et résolution de bug" ,
     "tags": [
-      
-      <img src="/skills/LHLogo.png" alt="CssLogo" />, 
-      <img src="/skills/Wave.webp" alt="CssLogo" />,
-      <img src="/skills/DevTools.webp" alt="CssLogo" />
-    
-    ]
+
+      <img src="/skills/LHLogo.png" alt="LHLogo" />,
+      <img src="/skills/Wave.webp" alt="WaveLogo" />,
+      <img src="/skills/DevTools.webp" alt="DevToolsLogo" />
+
+    ],
+
+    "gitHubUrl": "https://github.com/JBPhilippe/Projet_5_Nina"
+
   },
 ]
 

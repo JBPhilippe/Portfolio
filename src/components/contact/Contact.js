@@ -1,29 +1,49 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact.css'
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_fntulsh', 'template_iz96s46', form.current, {
+                publicKey: 'JuPUm4wPs7oVf1xkt',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    alert('Email sent succesfully!');
+                    e.target.reset();
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
     return (
         <section id="contact">
 
             <h3 className="contactTitle">Contact</h3>
-            <div className="contactPara"> Please fill out the form below to contact me </div>
-
 
             <div className="contactContainer">
 
 
                 <div className="contactFormLeft">
 
-                    <form action="" className='contactForm'>
+                    <form className='contactForm' ref={form} onSubmit={sendEmail}>
 
-                        <input type="text" className="name" placeholder='Your Name' />
-                        <input type="email" className="email" placeholder='Your Email' />
+                        <input type="text" className="name" name="from_name" placeholder='Your Name' />
+                        <input type="email" className="email" name="from_email" placeholder='Your Email' />
                         <textarea name="message" rows="5" className="messageArea" placeholder='Your message'></textarea>
-                        <button type='submit' value='Send' className="submitBtn">Submit</button>
+                        <button type='submit' value='Send' className="submitBtn">Envoyer</button>
 
                     </form>
 
@@ -32,14 +52,14 @@ const Contact = () => {
                 <div className="contactFormRight">
 
                     <div className="informations">
-                        <div className="emailPro"> <EmailIcon />jbdevpro76@gmail.com</div>
+                        <div className="emailPro"> <EmailIcon />jbdevpro@gmail.com</div>
                         <div className="phoneNumber"><PhoneIcon />06.75.15.55.95</div>
-                        <div className="localisation"> France, Normandy, Rouen </div>
+                        <div className="localisation"> <LocationOnIcon />France, Rouen </div>
                     </div>
 
                     <div className="links">
                         <LinkedInIcon className='icon' />
-                        <a href="https://github.com/JBPhilippe" target='_blanck'><GitHubIcon className='icon'/></a>
+                        <a href="https://github.com/JBPhilippe" target='_blanck'><GitHubIcon className='icon' /></a>
                     </div>
                 </div>
             </div>

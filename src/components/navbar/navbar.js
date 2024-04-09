@@ -9,26 +9,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
 
-  const[showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   return (
 
     <nav id="navbar">
-      <a href="#home"><img src={logo} alt="Logo" className="logo" /></a>
+      <Link to="home" smooth={true}> <img src={logo} alt="Logo" className="logo" /></Link>
       <div className="desktopMenu">
-        <Link to="home" smooth={true} className="desktopMenuListItem">Home</Link>
-        <Link to="about" smooth={true} offset={-150} className="desktopMenuListItem">About</Link>
-        <Link to="projects" smooth={true} offset={-150}className="desktopMenuListItem" >Projects</Link>
-        <Link to="skills" smooth={true} offset={-150} className="desktopMenuListItem">Skills</Link>
+        <Link to="home" smooth={true} className="desktopMenuListItem">Accueil</Link>
+        <Link to="about" smooth={true} offset={-80} className="desktopMenuListItem">À propos</Link>
+        <Link to="projects" smooth={true} offset={-150} className="desktopMenuListItem" >Projets</Link>
+        <Link to="skills" smooth={true} offset={-150} className="desktopMenuListItem">Compétences</Link>
         <Link to="contact" smooth={true} offset={-150} className="desktopMenuListItem">Contact</Link>
       </div>
 
-      
+
       <MenuIcon className="mobMenu" onClick={() => setShowMenu(!showMenu)}></MenuIcon>
-      <div className="navMenu" style={{display: showMenu? 'flex' : 'none'}}>
-        <Link to="home" smooth={true} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
-        <Link to="about" smooth={true} offset={-100} className="listItem" onClick={() => setShowMenu(false)}>About</Link>
-        <Link to="projects" smooth={true} offset={-150} className="listItem" onClick={() => setShowMenu(false)}>Projects</Link>
-        <Link to="skills" smooth={true} offset={-150} className="listItem" onClick={() => setShowMenu(false)}>Skills</Link>
+      <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
+        <Link to="home" smooth={true} className="listItem" onClick={() => setShowMenu(false)}>Accueil</Link>
+        <Link to="about" smooth={true} offset={-100} className="listItem" onClick={() => setShowMenu(false)}>À propos</Link>
+        <Link to="projects" smooth={true} offset={-150} className="listItem" onClick={() => setShowMenu(false)}>Projets</Link>
+        <Link to="skills" smooth={true} offset={-150} className="listItem" onClick={() => setShowMenu(false)}>Compétences</Link>
         <Link to="contact" smooth={true} offset={-150} className="listItem" onClick={() => setShowMenu(false)}>Contact</Link>
       </div>
     </nav>

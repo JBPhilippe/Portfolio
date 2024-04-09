@@ -15,7 +15,7 @@
     justify-content: center;
     text-align: center;
     font-size: 3rem;
-    margin: 3rem 0;
+    padding: 3rem 0;
 }
 
 .aboutPara {
@@ -31,17 +31,21 @@
         font-size: small;
     }
 
+    #about {
+        height: 90vh;
+    }
+
 
 }
 
 @media screen and (max-width:300px) {
 
-    #about {
-        height: 120vh;
-    }
-
     .aboutPara {
         font-size: smaller;
+    }
+
+    #about {
+        height: 100vh;
     }
 
 

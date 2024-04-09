@@ -6,18 +6,23 @@ const About = () => {
   return (
     <section id="about">
 
-      <h2 className="aboutTitle">About me</h2>
+      <h2 className="aboutTitle">À propos</h2>
       <div className="avatar">
         <img src={avatar} alt="Portrait" className="portrait" />
       </div>
       <div className="aboutContent">
 
 
-        <p className="aboutPara">Bonjour, <br /><br /> Je suis développeur Web junior en devenir. J'ai 35ans et je suis actuellement en formation chez OpenClassrooms où j'acquiers en ce moment les compétences de base nécessaires grâce à des projets professionalisants. <br /> <br />
-        Pourquoi cette reconversion maintenant pourrait-on se demander? <br /><br />
-        J'ai un parcours d'études aussi divers que variés, je suis passé par médecine, par biologie,  par des études d'infirmier et d'assistant dentaire. Mais mes premières études portaient sur ingénieur informatique. Et les circonstances on fait que j'ai pu à nouveau me pencher sur ce domaine. <br /><br />
-        Pour ce qui est de ma situation précédente, j'étais assistant dentaire. Rigueur et organisation sont des points communs que je retrouve avec plaisir dans le code. Mon activité se portait plus sur l'aspect humain et administratif, de la présentation des devis aux patients à la comptabilité en passant par l'optimisation de l'organisation du cabinet. <br /><br />
-        Étant naturellement curieux adaptable et autonome, mes objectifs sont actuellement de décrocher mon diplôme et par la suite de monter en compétence afin de découvrir les possibilités qu'offre le monde du développement, et d'en faire profiter les autres.</p>
+        <p className="aboutPara">
+
+          Bonjour, <br /><br />
+
+          Je suis développeur Web en formation. J'ai 35 ans et je suis actuellement en formation chez OpenClassrooms où j'acquiers les compétences nécessaires à travers des projets professionnels. <br /><br />
+          Pourquoi cette reconversion maintenant, pourrait-on se demander ? <br /><br />
+          Mon parcours scolaire est aussi divers que varié, j'ai étudié la médecine, la biologie, les soins infirmiers et l'assistance dentaire. Mais mes premières études étaient en informatique. Les circonstances m’ont permis de pouvoir à nouveau me tourner vers ce domaine. <br /><br />
+          Précédemment j’étais assistant dentaire. La rigueur et l'organisation sont des points communs que je retrouve avec plaisir dans le code. Mon activité s'est davantage portée sur l'aspect humain et administratif, depuis la présentation des devis
+           aux patients, à la comptabilité et à l'optimisation de l'organisation du cabinet. <br /><br />
+          Etant naturellement curieux, adaptable et autonome, mes objectifs sont actuellement d'obtenir mon diplôme et par la suite une montée compétences afin de découvrir les possibilités offertes par le monde du développement, et de les partager avec les autres.</p>
 
       </div>
     </section>

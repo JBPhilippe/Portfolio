@@ -10,7 +10,7 @@ const Projects = () => {
 
             <div className="projectsHeader">
 
-                <div className="projectsTitle"> Projects</div>
+                <div className="projectsTitle"> Projets</div>
 
             </div>
 

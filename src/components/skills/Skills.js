@@ -1,6 +1,8 @@
 import React from 'react'
 import './skills.css'
 import iconSet from '../../datas/iconSet'
+import cvPreview from '../../assets/capture-Cv.png'
+
 
 
 const Skills = () => {
@@ -8,7 +10,7 @@ const Skills = () => {
         <section id="skills">
 
 
-            <h3 className="skillsTitle"> Skills </h3>
+            <h3 className="skillsTitle"> Compétences </h3>
 
 
             <div className="skillsContainer">
@@ -33,9 +35,9 @@ const Skills = () => {
                 </div>
 
                 <div className="CV">
-                    <h4 className="cvTitle"> CV</h4>
+                    <img src={cvPreview} alt="cvPReview" className='cvPreview'/>
                     
-                    <a href="#home" className='cvDownload'><button className='cvDownloadBtn'> Télécharger CV <br /><br /> A venir</button></a>
+                    <a href="../skills/cvDownload.pdf" className='cvDownload' download='Cv_JB_PHILIPPE' ><button className='cvDownloadBtn'  > Télécharger CV </button></a>
                 </div>
 
             </div>

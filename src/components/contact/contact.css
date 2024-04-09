@@ -1,5 +1,6 @@
 .contactContainer {
     display: flex;
+    margin-top: 2rem;
     padding: 2rem;
     flex-direction: row;
     justify-content: space-around;
@@ -11,7 +12,7 @@
 
 
 .contactTitle {
-
+    margin-top: 10rem;
     text-align: center;
     font-family: "Permanent Marker";
     font-size: 3rem;
@@ -62,11 +63,18 @@
     display: flex;
     justify-content: center;
     background-color: white;
+    font-weight: bold;
     max-width: 20rem;
     border: none;
     padding: 0.75rem 3.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+.submitBtn:hover {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
 }
 
 .contactFormRight {
@@ -117,8 +125,28 @@
     text-decoration: none;
 }
 
+@media screen and (max-width:1200px) {
+
+    .contactTitle {
+        margin-top: 35rem;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+
+    .contactTitle {
+        margin-top: 35rem;
+    }
+    
+}
 
 @media screen and (max-width:800px) {
+
+    .contactTitle {
+        margin-top: 15rem;
+    }
+
 
     .contactContainer {
         flex-direction: column-reverse;
@@ -137,11 +165,21 @@
         margin-bottom: 2rem;
     }
 
+}
 
+@media screen and (max-width:800px) {
+
+    .contactTitle {
+        margin-top: 6rem;
+    }
 
 }
 
 @media screen and (max-width:530px) {
+
+    .contactTitle {
+        margin-top: 5rem;
+    }
 
     .emailPro,
     .phoneNumber,
@@ -160,7 +198,21 @@
         max-width: 15rem;
         
     }
+}
 
+@media screen and (max-width:319px) {
 
+    .contactTitle {
+        margin-top: 10rem;
+    }
+
+    .emailPro,
+.phoneNumber,
+.localisation {
+    
+    gap: 0.5rem;
+    
+
+}
 
 }

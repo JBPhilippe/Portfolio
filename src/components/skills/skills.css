@@ -6,7 +6,7 @@
 .skillsTitle {
     text-align: center;
     font-family: "Permanent Marker";
-    height: 15vh;
+    height: 10vh;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -14,7 +14,6 @@
 .skillsContainer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -53,14 +52,40 @@
     height: 5vh;
 }
 
+img.cvPreview {
+    width: 53%
+    
+}
+
 
 .cvDownloadBtn {
     background-color: white;
+    font-weight: bold;
     border: none;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     cursor: pointer;
     margin-top: 2rem;
+}
+
+.cvDownloadBtn:hover {
+    background-color: blue;
+    color: white;
+    
+}
+
+@media screen and (max-width:1500px) {
+
+    img.cvPreview {
+        width: 68%  
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    img.cvPreview {
+        width: 65%  
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -71,6 +96,18 @@
         align-items: center;
         gap: 2rem;
     }
-    
 
+    .CV {  
+        width: 70vw;
+    }
 }
+
+@media screen and (max-width:1500px) {
+
+    .CV {  
+        width: 90vw;
+    }
+}
+
+
+

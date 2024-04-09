@@ -10,7 +10,7 @@ const Projects = () => {
 
             <div className="projectsHeader">
 
-                <div className="projectsTitle"> Projets</div>
+                <h1 className="projectsTitle"> Projets</h1>
 
             </div>
 

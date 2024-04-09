@@ -39,6 +39,10 @@
 
 }
 
+label {
+    display:none;
+}
+
 .name,
 .email,
 .messageArea {

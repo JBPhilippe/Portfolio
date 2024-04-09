@@ -31,18 +31,21 @@ const Contact = () => {
     return (
         <section id="contact">
 
-            <h3 className="contactTitle">Contact</h3>
+            <h1 className="contactTitle">Contact</h1>
 
             <div className="contactContainer">
 
 
                 <div className="contactFormLeft">
 
-                    <form className='contactForm' ref={form} onSubmit={sendEmail}>
+                    <form className='contactForm' name="contact_form" ref={form} onSubmit={sendEmail}>
+                        
+                        <input type="text" id="name" className="name" name="from_name" placeholder='Your Name' />
+                       
+                        <input type="email"  id="email"className="email" name="from_email" placeholder='Your Email' />
+                        
+                        <textarea  id="message" name="message" rows="5" className="messageArea" placeholder='Your message'></textarea>
 
-                        <input type="text" className="name" name="from_name" placeholder='Your Name' />
-                        <input type="email" className="email" name="from_email" placeholder='Your Email' />
-                        <textarea name="message" rows="5" className="messageArea" placeholder='Your message'></textarea>
                         <button type='submit' value='Send' className="submitBtn">Envoyer</button>
 
                     </form>
@@ -59,7 +62,7 @@ const Contact = () => {
 
                     <div className="links">
                         <LinkedInIcon className='icon' />
-                        <a href="https://github.com/JBPhilippe" target='_blanck'><GitHubIcon className='icon' /></a>
+                        <a href="https://github.com/JBPhilippe" target='_blanck' aria-label="Github"><GitHubIcon className='icon' /></a>
                     </div>
                 </div>
             </div>

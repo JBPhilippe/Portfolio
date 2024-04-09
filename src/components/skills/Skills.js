@@ -10,21 +10,21 @@ const Skills = () => {
         <section id="skills">
 
 
-            <h3 className="skillsTitle"> Compétences </h3>
+            <h1 className="skillsTitle"> Compétences </h1>
 
 
             <div className="skillsContainer">
 
                 <div className="technicalStack">
 
-                    <h4 className="technicalStackTitle">Technical Stack</h4>
+                    <h2 className="technicalStackTitle">Technical Stack</h2>
 
                     <div className="skillSet">
                         {iconSet.map((icon) =>
 
                             <div className="techLogo" key={icon.id}>
 
-                                <img src={icon.img} alt="techIcon" />
+                                <img src={icon.img} alt={icon.alt} />
                             </div>
 
                         )}

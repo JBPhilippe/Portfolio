@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
 
     <nav id="navbar">
-      <Link to="home" smooth={true}> <img src={logo} alt="Logo" className="logo" /></Link>
+      <Link to="home" smooth={true}> <img src={logo} alt="LogoPerso" className="logo" /></Link>
       <div className="desktopMenu">
         <Link to="home" smooth={true} className="desktopMenuListItem">Accueil</Link>
         <Link to="about" smooth={true} offset={-80} className="desktopMenuListItem">À propos</Link>

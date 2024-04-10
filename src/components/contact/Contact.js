@@ -61,7 +61,8 @@ const Contact = () => {
                     </div>
 
                     <div className="links">
-                        <LinkedInIcon className='icon' />
+                        <a href="https://www.linkedin.com/in/jean-baptiste-philippe-a94a20300/" target='_blanck' aria-label="Github"><LinkedInIcon className='icon' /></a>
+                        
                         <a href="https://github.com/JBPhilippe" target='_blanck' aria-label="Github"><GitHubIcon className='icon' /></a>
                     </div>
                 </div>

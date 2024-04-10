@@ -40,7 +40,7 @@
 }
 
 label {
-    display:none;
+    display: none;
 }
 
 .name,
@@ -127,6 +127,12 @@ label {
     flex-direction: row;
     gap: 8rem;
     text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.links:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2, 1.2)
 }
 
 @media screen and (max-width:1200px) {
@@ -134,7 +140,7 @@ label {
     .contactTitle {
         margin-top: 35rem;
     }
-    
+
 }
 
 @media screen and (max-width:1200px) {
@@ -142,7 +148,7 @@ label {
     .contactTitle {
         margin-top: 35rem;
     }
-    
+
 }
 
 @media screen and (max-width:800px) {
@@ -198,9 +204,9 @@ label {
     .name,
     .email,
     .messageArea {
-        
+
         max-width: 15rem;
-        
+
     }
 }
 
@@ -211,12 +217,12 @@ label {
     }
 
     .emailPro,
-.phoneNumber,
-.localisation {
-    
-    gap: 0.5rem;
-    
+    .phoneNumber,
+    .localisation {
 
-}
+        gap: 0.5rem;
+
+
+    }
 
 }

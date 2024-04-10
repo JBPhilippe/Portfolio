@@ -9,6 +9,8 @@ const ProjectDisplay = () => {
 
             {Datas.map((data) => {
 
+                let isDemoUrl = data.demoUrl
+                
                 return (
                     <article className="thumb" key={data.id} >
 
@@ -29,13 +31,17 @@ const ProjectDisplay = () => {
 
                                 <div className="projectTags">
                                     {data.tags.map((tag, i) =>
+
                                         <div className="tags" key={i} >
                                             {tag}
+
                                         </div>
+
                                     )}
 
                                     <div className="projectLinks">
-                                        <a href={data.demoURL} target='_blanck'> <button className='projectLinksBtn'>Démo</button></a>
+
+                                        {isDemoUrl ? <a href={data.demoUrl} target='_blanck'> <button className='projectLinksBtn'>Démo</button></a> : ""}
                                         <a href={data.gitHubUrl} target='_blanck'> <button className='projectLinksBtn'>Github</button></a>
 
                                     </div>
@@ -49,8 +55,8 @@ const ProjectDisplay = () => {
                         </div>
                     </article>
                 );
-            })}
 
+            })}
         </div>
 
     )

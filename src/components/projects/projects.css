@@ -59,7 +59,8 @@ img.projectImg {
 
 
 .projectLinks {
-    margin-left: 1rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .projectLinksBtn {

@@ -12,12 +12,12 @@ const ProjectDisplay = () => {
                 return (
                     <article className="thumb" key={data.id} >
 
-<h2 className="projectThumbTitle">{data.title}</h2>
+                        <h2 className="projectThumbTitle">{data.title}</h2>
 
                         <div className="projectGeneral"  >
 
                             <div className="projectThumb" >
-                                
+
                                 <img src={data.cover} alt={data.title} className="projectImg" />
 
                             </div>
@@ -35,7 +35,9 @@ const ProjectDisplay = () => {
                                     )}
 
                                     <div className="projectLinks">
+                                        <a href={data.demoURL} target='_blanck'> <button className='projectLinksBtn'>Démo</button></a>
                                         <a href={data.gitHubUrl} target='_blanck'> <button className='projectLinksBtn'>Github</button></a>
+
                                     </div>
 
                                 </div>
